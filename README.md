@@ -5,7 +5,7 @@ To upgrade our contracts we use something called the Proxy Pattern. The word Pro
 
 Essentially how this pattern works is that a contract is split into two contracts - Proxy Contract and the Implementation contract.
 
-The Proxy Contract is responsible for managing the state of the contract which involves persistent storage whereas Implementation Contract is responsible for executing the logic and doesn't store any persistent state. User calls the Proxy Contract which further does a delegatecall to the Implementation Contract so that it can implement the logic. Remember we studied delegatecall in one of our previous levels 👀
+The Proxy Contract is responsible for managing the state of the contract which involves persistent storage whereas Implementation Contract is responsible for executing the logic and doesn't store any persistent state. User calls the Proxy Contract which further does a delegatecall to the Implementation Contract so that it can implement the logic by using delegate call.
 
 This pattern becomes interesting when Implementation Contract can be replaced which means the logic which is executed can be replaced by another version of the Implementation Contract without affecting the state of the contract which is stored in the proxy.
 
