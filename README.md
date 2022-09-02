@@ -9,7 +9,6 @@ The Proxy Contract is responsible for managing the state of the contract which i
 
 This pattern becomes interesting when Implementation Contract can be replaced which means the logic which is executed can be replaced by another version of the Implementation Contract without affecting the state of the contract which is stored in the proxy.
 
-Singleton Patterns
 There are mainly three ways in which we can replace/upgrade the Implementation Contract:
 
 - Diamond Implementation
